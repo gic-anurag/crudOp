@@ -1,0 +1,74 @@
+package jsonExample;
+
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.InputStream;
+
+
+
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+
+
+
+
+
+
+public class Day8b {
+	
+
+	    public static void main(String[] args) throws Exception {
+	    	try {
+	    	InputStream in=new FileInputStream("D:\\prac\\InputJson (2).json");
+			int i=0;
+			String s="";
+			while ((i=in.read())!=-1) {
+				System.out.print((char)i);
+				s+=(char)i;
+				
+			}
+
+			//  String jsonStr = "{\"Technologies\" : [\"Java\", \"Scala\", \"Python\"]}";
+		      ObjectMapper mapper = new ObjectMapper();
+		      String fetch=null;
+		      JsonNode node=mapper.readTree(s);
+		      System.out.println(node);
+		      ArrayNode arrayNode = (ArrayNode) mapper.readTree(s).get("data");
+		      if(arrayNode.isArray()) {
+		         for(JsonNode jsonNode : arrayNode) {
+		            System.out.println("123::: "+jsonNode.get("taskSpecs"));
+		            fetch=jsonNode.get("taskSpecs").toString();
+		            
+		           
+		         }
+		     
+				String objJson="\"multiEngineResults\": {\r\n"
+						+ "                      \"suspectResult\": \"\",\r\n"
+						+ "                      \"cbvutvi4vResult\": \" \",\r\n"
+						+ "                      \"wellknownResult\": \" \",\r\n"
+						+ "                      \"uniqueResult\": \"\"\r\n"
+						+ "                    }";
+				
+			
+				//JSONObject jsonObject = new JSONObject();
+				JSONObject jsonObject = new JSONObject.parse(objJson).getAsJsonObject();
+				   //JsonFactory out=new JsonFactory(new File("D:\\prac\\.txobjJson.json"));
+				   FileWriter file = new FileWriter("D:\\prac\\.txobjJson.json");
+			         file.write(node1.toJSONString());
+			         file.close();
+				   
+			
+		
+	    	
+		      }	
+	    	in.close();
+	    }catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+}
+
+

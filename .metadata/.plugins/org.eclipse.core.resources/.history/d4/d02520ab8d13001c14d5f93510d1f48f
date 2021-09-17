@@ -1,0 +1,10 @@
+package IOStream;
+
+import java.io.FileOutputStream;
+
+public class FileOuString {
+  public static void main(String[] args) {
+	  FileOutputSreams fs=new FileOutputStream("D:\\fileString.txt");
+	  String s="my name is anurag";
+  }
+}

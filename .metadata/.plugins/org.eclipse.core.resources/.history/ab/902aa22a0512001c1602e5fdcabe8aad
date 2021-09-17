@@ -1,0 +1,33 @@
+package day6;
+
+
+class Day6h implements Runnable{
+	
+String name;
+public Day6h(String name) {
+	this.name=name;
+}
+public void run() {
+	System.out.println(name +"job statred by THread:"+Thread.currentThread().getName());
+	try {
+		Thread.sleep(1000);
+	} catch (Exception e) {
+
+	}
+	System.out.println(name +"job complited by THread:"+Thread.currentThread().getName());
+}
+}
+
+
+public class Day6g{
+	
+	public static void main(String[] args) {
+		PrintJob [] job= {new PrintJob("anu"),
+				new PrintJob("baba"),
+				new PrintJob("pra"),
+				new PrintJob("monu"),
+				new PrintJob("boby"),
+				new PrintJob("kali")};
+	}
+	
+}

@@ -1,0 +1,61 @@
+package jsonExample;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+import org.json.JSONArray;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+
+
+
+
+
+
+public class Day8b {
+	
+
+	    public static void main(String[] args) throws Exception {
+	    	try {
+	    	InputStream in=new FileInputStream("D:\\prac\\InputJson (2).json");
+			int i=0;
+			String s="";
+			while ((i=in.read())!=-1) {
+				System.out.print((char)i);
+				s+=(char)i;
+				
+			}
+
+			//  String jsonStr = "{\"Technologies\" : [\"Java\", \"Scala\", \"Python\"]}";
+		      ObjectMapper mapper = new ObjectMapper();
+		      String fetch=null;
+		      JsonNode node=mapper.readTree(s);
+		      System.out.println(node);
+		      ArrayNode arrayNode = (ArrayNode) mapper.readTree(s).get("data").get("taskSpecs");
+		      if(arrayNode.isArray()) {
+		         for(JsonNode jsonNode : arrayNode) {
+		            System.out.println("123::: "+jsonNode.get("taskSpecs"));
+		            fetch=jsonNode.get("taskSpecs").asText();
+		            
+		           
+		         }
+		      
+		    // System.out.println("34432:: "+(arrayNode));
+				
+			
+				
+			
+		
+	    	
+		      }	
+	    	in.close();
+	    }catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+}
+
+

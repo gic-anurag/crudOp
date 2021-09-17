@@ -1,0 +1,18 @@
+package IOStream;
+
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileOuString {
+  public static void main(String[] args) throws IOException {
+	  FileOutputStream fs=new FileOutputStream("D:\\fileString.txt");
+	  String s="my name is anurag";
+	  byte[] b=s.getBytes();
+	  fs.write(b);
+	  fs.close();
+	  System.out.println(fs);
+	  System.out.println("ho gyaa");
+
+  }
+}

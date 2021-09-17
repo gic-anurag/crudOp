@@ -1,0 +1,9 @@
+package IOStream;
+import java.io.FileOutputStream;
+public class FileOutputSreams {
+  
+
+public static void main(String[] args) {
+	   FileOutputSream fo=new FileOutputSream("D:\\taskout.txt");
+   }
+}

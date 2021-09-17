@@ -1,0 +1,12 @@
+package IOStream;
+import java.io.FileOutputStream;
+public class FileOutputSreams {
+  
+
+public static void main(String[] args) {
+    FileOutputStream fo=new FileOutputStream("D:\\testout.txt");
+    fo.write("jhj");
+    fo.close();
+    System.out.println("Success");
+   }
+}

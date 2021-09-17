@@ -1,0 +1,21 @@
+package day6;
+
+
+public class Day6g implements Runnable{
+	
+String name;
+public Day6g(String name) {
+	this.name=name;
+}
+public void run() {
+	System.out.println("anurag ");
+	try {
+		Thread.sleep(1000);
+	} catch (Exception e) {
+
+	}
+}
+
+	
+}
+

@@ -1,0 +1,44 @@
+package jsonExample;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.util.*;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+
+
+public class Day8b {
+	
+
+	    public static void main(String[] args) throws Exception {
+	    	try {
+	    	InputStream in=new FileInputStream("D:\\prac\\InputJson (2).json");
+			int i=0;
+			String s="";
+			while ((i=in.read())!=-1) {
+				System.out.print((char)i);
+				s+=(char)i;
+				
+			}
+	    	JSONObject root = new JSONObject(s);
+	    	JSONArray sportsArray = root.getJSONArray("reult");
+
+	    	// now get the first element:
+	    	JSONObject firstSport = sportsArray.getJSONObject(0);
+
+	    	// and details of the first element
+	    	//String name = firstSport.getString("ruleResult"); 
+	    	String isinclude = firstSport.getString("result"); // 40
+	    	//JSONArray leaguesArray = firstSport.getJSONArray("leagues");
+	    	
+	    	System.out.println(isinclude);
+	    	in.close();
+	    }catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+}
+
