@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "file.upload.maxsize",
+    "type": "java.lang.String",
+    "description": "A description for 'file.upload.maxsize'"
+  },
+  {
+    "name": "file.upload.path",
+    "type": "java.lang.String",
+    "description": "A description for 'file.upload.path'"
+  },
+  {
+    "name": "aspose.license.path",
+    "type": "java.lang.String",
+    "description": "A description for 'aspose.license.path'"
+  },
+  {
+    "name": "file.shared.path1",
+    "type": "java.lang.String",
+    "description": "A description for 'file.shared.path1'"
+  },
+  {
+    "name": "scoping.rule.document.url",
+    "type": "java.lang.String",
+    "description": "A description for 'scoping.rule.document.url'"
+  },
+  {
+    "name": "mrl.rule.document.url",
+    "type": "java.lang.String",
+    "description": "A description for 'mrl.rule.document.url'"
+  },
+  {
+    "name": "l3.auth.token",
+    "type": "java.lang.String",
+    "description": "A description for 'l3.auth.token'"
+  },
+  {
+    "name": "convert.multipart.rest.url",
+    "type": "java.lang.String",
+    "description": "A description for 'convert.multipart.rest.url'"
+  },
+  {
+    "name": "document.list.rest.url",
+    "type": "java.lang.String",
+    "description": "A description for 'document.list.rest.url'"
+  },
+  {
+    "name": "case.details.rest.url",
+    "type": "java.lang.String",
+    "description": "A description for 'case.details.rest.url'"
+  }
+]}
