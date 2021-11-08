@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\gic\JsonToDB"/>
 			<item value="E:\gic\grid training\src\sqlCRUD"/>
 			<item value="E:\gic\mavenex\target"/>
 			<item value="E:\gic\grid training\src\day6\Test2.java"/>
@@ -28,13 +29,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="restful.jersy"/>
+			<item value="com.json.exam"/>
 		</list>
 		<list key="groupId">
-			<item value="restful"/>
+			<item value="com.json"/>
 		</list>
 		<list key="artifactId">
-			<item value="jersy"/>
+			<item value="exam"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -70,5 +71,32 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\fadv\fadv-wellknown-router-service-dev"/>
+			<item value="D:\fadv\fadv-wellknown-router-service-dev\src"/>
+			<item value="D:\fadv\fadv-verification-workflow-dev"/>
+			<item value="D:\fadv\fadv-verifcation-module-dev"/>
+			<item value="D:\fadv\fadv-vendor-input-output-service-dev"/>
+			<item value="D:\fadv\fadv-suspect-router-service-dev"/>
+			<item value="D:\fadv\fadv-stellar-router-service-master"/>
+			<item value="D:\fadv\fadv-spoc-router-service-dev"/>
+			<item value="D:\fadv\fadv-online-router-service-dev"/>
+			<item value="D:\fadv\fadv-master-data-service-dev"/>
+			<item value="D:\fadv\fadv-cbvutvi4v-router-service-dev"/>
+			<item value="C:\Users\rupes\Desktop\fadv\fadv-crd-ui-master"/>
+			<item value="C:\Users\rupes\Desktop\fadv\fadv-spoc-router-service-dev"/>
+			<item value="C:\Users\rupes\Desktop\fadv\fadv-verifcation-module-dev"/>
+			<item value="C:\Users\rupes\Desktop\fadv\fadv-wellknown-router-service-dev"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>
